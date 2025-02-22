@@ -1,0 +1,72 @@
+/* Style pour la liste des films */
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Espace entre les éléments */
+  justify-content: space-around; /* Centrer les éléments */
+}
+
+/* Style pour chaque carte de film */
+.movie-card {
+  background-color: #fff; /* Couleur de fond blanche */
+  border-radius: 10px; /* Coins arrondis */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre portée */
+  overflow: hidden; /* Masquer le débordement */
+  transition: transform 0.2s, box-shadow 0.2s; /* Transition pour les effets */
+  width: 200px; /* Largeur fixe */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px;
+  text-align: center;
+}
+
+/* Effet au survol de la carte de film */
+.movie-card:hover {
+  transform: translateY(-10px); /* Déplacer vers le haut */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Augmenter l'ombre portée */
+}
+
+/* Style pour l'affiche du film */
+.movie-poster {
+  width: 100%; /* Largeur complète */
+  height: 300px; /* Hauteur fixe pour toutes les affiches */
+  object-fit: cover; /* Couvrir toute la zone */
+}
+
+.movie-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* Style pour les informations du film */
+.movie-info {
+  padding: 15px; /* Espacement interne */
+  flex-grow: 1; /* Permet à la section info de prendre l'espace restant */
+}
+
+/* Style pour le titre du film */
+.movie-title {
+  font-size: 18px; /* Taille de police */
+  margin: 0; /* Pas de marge */
+}
+
+/* Style pour la description du film */
+.movie-description {
+  font-size: 14px; /* Taille de police */
+  color: #555; /* Couleur du texte */
+  margin: 10px 0; /* Marge en haut et en bas */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Style pour la note du film */
+.movie-rating {
+  font-size: 16px; /* Taille de police */
+  font-weight: bold; /* Texte en gras */
+  margin-top: 10px; /* Marge en haut */
+}
